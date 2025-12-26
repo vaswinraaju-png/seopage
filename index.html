@@ -31,53 +31,18 @@
     /* HEADER */
     header {
       background: var(--bg-secondary);
-      padding: 14px 16px;
+      padding: 16px;
       position: sticky;
       top: 0;
-      z-index: 10;
       border-bottom: 1px solid var(--divider);
-    }
-
-    .header-inner {
-      max-width: 480px;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      text-align: center;
     }
 
     header h1 {
       font-size: 1rem;
       margin: 0;
       color: var(--accent);
-    }
-
-    .menu-btn {
-      font-size: 1.4rem;
-      background: none;
-      border: none;
-      cursor: pointer;
-      color: var(--text-main);
-    }
-
-    /* COLLAPSIBLE MENU */
-    nav {
-      max-width: 480px;
-      margin: auto;
-      display: none;
-      padding: 10px 0 0;
-    }
-
-    nav a {
-      display: block;
-      padding: 10px 16px;
-      text-decoration: none;
-      color: var(--text-main);
-      font-size: 0.9rem;
-    }
-
-    nav a:hover {
-      color: var(--accent);
+      font-weight: 600;
     }
 
     /* MAIN CONTENT */
@@ -127,29 +92,13 @@
       opacity: 0.8;
     }
   </style>
-
-  <script>
-    function toggleMenu() {
-      const nav = document.getElementById("menu");
-      nav.style.display = nav.style.display === "block" ? "none" : "block";
-    }
-  </script>
 </head>
 
 <body>
 
   <!-- HEADER -->
   <header>
-    <div class="header-inner">
-      <h1>Why Skincare Matters?</h1>
-      <button class="menu-btn" onclick="toggleMenu()">☰</button>
-    </div>
-    <nav id="menu">
-      <a href="#">Skin Hydration</a>
-      <a href="#">Ingredient Education</a>
-      <a href="#">Skincare Myths</a>
-      <a href="#">Why Skincare Matters?</a>
-    </nav>
+    <h1>Why Skincare Matters?</h1>
   </header>
 
   <!-- BLOG CONTENT -->
